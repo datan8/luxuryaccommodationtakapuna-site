@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Panda head (white circle with black outline) -->
+  <circle cx="24" cy="24" r="22" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Panda ears (black circles) -->
+  <circle cx="11" cy="11" r="7" fill="black"/>
+  <circle cx="37" cy="11" r="7" fill="black"/>
+
+  <!-- Panda eyes (black circles) -->
+  <circle cx="16" cy="22" r="5" fill="black"/>
+  <circle cx="32" cy="22" r="5" fill="black"/>
+
+  <!-- Panda eye highlights (white circles) -->
+  <circle cx="14" cy="20" r="1.5" fill="white"/>
+  <circle cx="30" cy="20" r="1.5" fill="white"/>
+
+  <!-- Panda nose (black oval) -->
+  <ellipse cx="24" cy="28" rx="4" ry="3" fill="black"/>
+
+  <!-- Panda mouth (black curved line) -->
+  <path d="M18 32C20.6667 36 27.3333 36 30 32" stroke="black" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Yellow financial accent element (dollar sign) -->
+  <path d="M24 14V42" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 17H28" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 38H28" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+</svg>
