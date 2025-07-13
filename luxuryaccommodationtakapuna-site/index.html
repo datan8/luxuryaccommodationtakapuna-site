@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Performance Optimization -->
+  <link rel="preload" href="/images/hero-bg.jpg" as="image" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+  <!-- Fonts: Montserrat & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Your Website Title</title>
+
+  <!-- Simple Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registered: ', registration);
+
+            // Simple update handling without loops
+            registration.addEventListener('updatefound', () => {
+              console.log('New service worker available');
+              // Just log the update, don't force refresh
+            });
+
+            // Preload video on fast connections
+            if (navigator.connection &&
+                navigator.connection.effectiveType !== '2g' &&
+                navigator.connection.effectiveType !== 'slow-2g') {
+
+              setTimeout(() => {
+                if (registration.active) {
+                  const messageChannel = new MessageChannel();
+                  messageChannel.port1.onmessage = (event) => {
+                    if (event.data.success) {
+                      console.log('Video preloaded successfully');
+                    }
+                  };
+
+                  registration.active.postMessage(
+                    { type: 'PRELOAD_VIDEO' },
+                    [messageChannel.port2]
+                  );
+                }
+              }, 1000);
+            }
+          })
+          .catch((registrationError) => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
