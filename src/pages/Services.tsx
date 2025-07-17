@@ -82,10 +82,14 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Concierge Services */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">🛎️</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://media.istockphoto.com/id/1268469291/photo/hotel-service-bell-concept-hotel-travel-room-modern-luxury-hotel-reception-counter-desk-on.jpg?s=612x612&w=0&k=20&c=CpI6gSizlG6rH45gKqbMmN2l9D7TOhBtGpNxD3wvv64="
+                    alt="Concierge Services"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Concierge Services</CardTitle>
               </CardHeader>
@@ -104,10 +108,14 @@ const Services = () => {
             </Card>
 
             {/* Spa & Wellness */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">🧘</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=400&fit=crop&crop=center"
+                    alt="Spa & Wellness"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Spa & Wellness</CardTitle>
               </CardHeader>
@@ -126,10 +134,14 @@ const Services = () => {
             </Card>
 
             {/* Dining Experiences */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">🍽️</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=400&fit=crop&crop=center"
+                    alt="Dining Experiences"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Dining Experiences</CardTitle>
               </CardHeader>
@@ -148,10 +160,14 @@ const Services = () => {
             </Card>
 
             {/* Business Services */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">💼</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://www.shutterstock.com/image-photo/aesthetic-luxury-bohemian-minimalist-home-600nw-2129793905.jpg"
+                    alt="Business Services"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Business Services</CardTitle>
               </CardHeader>
@@ -170,10 +186,14 @@ const Services = () => {
             </Card>
 
             {/* Transportation */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">🚗</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=400&fit=crop&crop=center"
+                    alt="Transportation"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Transportation</CardTitle>
               </CardHeader>
@@ -192,10 +212,14 @@ const Services = () => {
             </Card>
 
             {/* Recreational Activities */}
-            <Card className="hover:shadow-lg transition duration-300">
+            <Card className="hover:shadow-lg transition duration-300 text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl luxury-gold">🏖️</span>
+                <div className="w-full h-48 overflow-hidden mb-6 shadow-lg rounded-lg">
+                  <img
+                    src="https://casamarinaresort.com/wp-content/uploads/210114_Casa-Marina_Beach-Activities_1000x665.jpg"
+                    alt="Recreation & Leisure"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl luxury-text">Recreation & Leisure</CardTitle>
               </CardHeader>

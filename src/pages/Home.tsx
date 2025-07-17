@@ -180,9 +180,10 @@ const Home = () => {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-                <Link to="/services">
+              <Button asChild variant="secondary" size="lg">
+                <Link to="/services" className="flex items-center gap-2">
                   View Services
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
             </div>

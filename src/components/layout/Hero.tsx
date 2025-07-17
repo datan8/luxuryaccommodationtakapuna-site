@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface HeroProps {
   title: string;
@@ -22,12 +23,27 @@ const Hero: React.FC<HeroProps> = ({
   secondaryButtonLink,
   backgroundImage = "/images/hero_background_collage_v2.jpg",
 }) => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
-      {/* Luxury background image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Luxury background image with parallax effect */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="absolute -top-20 -bottom-20 left-0 right-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          transform: `translateY(${scrollY * 0.5}px)`,
+          willChange: 'transform'
+        }}
       />
 
       {/* Gradient overlay for text readability and luxury effect */}
@@ -62,7 +78,7 @@ const Hero: React.FC<HeroProps> = ({
           )}
 
           {secondaryButtonText && secondaryButtonLink && (
-            <Button variant="outline" asChild size="lg" className="border-white/90 text-white hover:bg-white hover:text-gray-900 shadow-xl backdrop-blur-sm border-2">
+            <Button asChild size="lg" className="bg-[#A18F63E6] text-[#FFFFFF] text-white hover:bg-white hover:text-gray-900 shadow-xl backdrop-blur-sm font-semibold">
               <Link to={secondaryButtonLink}>
                 {secondaryButtonText}
               </Link>

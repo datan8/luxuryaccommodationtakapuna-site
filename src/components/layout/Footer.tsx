@@ -53,16 +53,13 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="mb-4 text-lg font-bold luxury-text">Contact Information</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2">
-                <span className="luxury-gold">📞</span>
+              <li>
                 <span className="luxury-text-muted">+64 9 xxx xxxx</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="luxury-gold">✉️</span>
+              <li>
                 <span className="luxury-text-muted">tim@luxuryaccommodationtakapuna.com</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="luxury-gold">📍</span>
+              <li>
                 <address className="luxury-text-muted not-italic">
                   Takapuna / Milford Border<br />
                   Auckland, New Zealand<br />

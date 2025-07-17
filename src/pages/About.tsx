@@ -22,7 +22,7 @@ const About = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 luxury-bg">
+      <section className="py-16 luxury-bg"> 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -31,7 +31,7 @@ const About = () => {
                 Nestled in one of Auckland's most prestigious beachside locations, Luxury Accommodation Takapuna
                 represents the pinnacle of refined hospitality. Our vision began with a simple yet profound idea:
                 to create an sanctuary where luxury meets comfort, and where every guest feels like royalty.
-              </p> 
+              </p>
               <p className="luxury-text-muted mb-6 text-lg leading-relaxed">
                 Located in the heart of Takapuna, we offer unparalleled access to pristine beaches, world-class
                 dining, and the natural beauty that makes Auckland a global destination. Our commitment to excellence
@@ -66,8 +66,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition duration-300">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl luxury-gold">✨</span>
+                <div className="mx-auto w-24 h-24 rounded-full overflow-hidden mb-6 shadow-lg ring-4 ring-primary/10">
+                  <img src="/images/image_4.jpeg" alt="Excellence" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="text-xl luxury-text">Excellence</CardTitle>
               </CardHeader>
@@ -81,8 +81,8 @@ const About = () => {
 
             <Card className="text-center hover:shadow-lg transition duration-300">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl luxury-gold">🏖️</span>
+                <div className="mx-auto w-24 h-24 rounded-full overflow-hidden mb-6 shadow-lg ring-4 ring-primary/10">
+                  <img src="/images/image_3.jpeg" alt="Location" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="text-xl luxury-text">Location</CardTitle>
               </CardHeader>
@@ -96,8 +96,8 @@ const About = () => {
 
             <Card className="text-center hover:shadow-lg transition duration-300">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl luxury-gold">❤️</span>
+                <div className="mx-auto w-24 h-24 rounded-full overflow-hidden mb-6 shadow-lg ring-4 ring-primary/10">
+                  <img src="/images/IMage_2.jpeg" alt="Hospitality" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="text-xl luxury-text">Hospitality</CardTitle>
               </CardHeader>
