@@ -31,7 +31,7 @@ const About = () => {
                 Nestled in one of Auckland's most prestigious beachside locations, Luxury Accommodation Takapuna
                 represents the pinnacle of refined hospitality. Our vision began with a simple yet profound idea:
                 to create an sanctuary where luxury meets comfort, and where every guest feels like royalty.
-              </p>
+              </p> 
               <p className="luxury-text-muted mb-6 text-lg leading-relaxed">
                 Located in the heart of Takapuna, we offer unparalleled access to pristine beaches, world-class
                 dining, and the natural beauty that makes Auckland a global destination. Our commitment to excellence
