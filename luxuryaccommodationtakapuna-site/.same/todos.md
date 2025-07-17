@@ -1,7 +1,7 @@
 # Todos
 
 ## Current Tasks
-- [x] Implement parallax effect on hero image
+- All tasks completed! ✅
 
 ## Completed Tasks
 - [x] Match "Our Services" button style to "Book Your Stay" button
@@ -13,10 +13,15 @@
 - [x] Add relevant stock images to "Premium Services" cards
 - [x] Make Premium Services images square, fit card width, and center content
 - [x] Initialize git repository and commit all changes
+- [x] Implement parallax effect on hero image
 
-## Recent Changes
-- Added parallax effect to hero background image using scroll-based transform
-- Imported React hooks (useState, useEffect) for scroll tracking
-- Applied transform: translateY() to create parallax movement
-- Extended background image bounds to prevent empty space during parallax
-- Added overflow-hidden to hero section for clean boundaries
+## Recent Changes (Version 18)
+- ✅ Added parallax effect to hero background image using scroll-based transform
+- ✅ Imported React hooks (useState, useEffect) for scroll tracking
+- ✅ Applied transform: translateY() with 0.5x scroll speed for smooth parallax movement
+- ✅ Extended background image bounds to prevent empty space during parallax
+- ✅ Added overflow-hidden to hero section for clean boundaries
+- ✅ Committed all changes to git repository (commit: 2d06244)
+
+## Project Status
+The luxury accommodation website now features a sophisticated parallax effect on the hero section, enhancing the visual appeal and providing a modern, professional user experience. All requested visual improvements have been successfully implemented.
